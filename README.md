@@ -1,4 +1,4 @@
-# Implemention of simple API with golang
+# Implemention of simple API with golang!
 
 #### Get all todos
 `GET /todo-list/`
