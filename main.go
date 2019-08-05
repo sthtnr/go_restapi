@@ -24,8 +24,9 @@ func main() {
 	r := mux.NewRouter()
 
 	// Mock Data - @todo - implement DB
-	todos = append(todos, Todo{Tasknumber: "1", Content: "practice piano hard :3", Deadline: "2019/02/22"})
-	todos = append(todos, Todo{Tasknumber: "2", Content: "study english carefully ;>", Deadline: "2019/02/24"})
+	todos = append(todos, Todo{Tasknumber: "1", Content: "practice piano hard :3", Deadline: "2019/08/02"})
+	todos = append(todos, Todo{Tasknumber: "2", Content: "study english carefully ;>", Deadline: "2019/08/03"})
+	todos = append(todos, Todo{Tasknumber: "3", Content: "ｳｵｳｵ ₍₍🐟⁾⁾ ｳｵｳｵ", Deadline: "2019/08/04"})
 
 	// route handlers / endpoints
 	r.HandleFunc("/todo-list/", getTodos).Methods("GET")
